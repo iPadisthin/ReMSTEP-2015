@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Albert Penticoss -- Designer/Developer -- @iPadisthin
+
+# THANKS
+
+    
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, SASS
+    Normalize.css, jQuery, Modernizr
+    Hammer for Mac

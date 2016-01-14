@@ -1,0 +1,109 @@
+.logos div {
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+nav.main-menu {
+    padding-left: 20px;
+    .menu-toggle {
+        z-index: 1000;
+        display: block;
+        position: fixed;
+        left: 50%;
+        margin-left: -20px;
+        cursor: pointer;
+        width: 40px;
+        float: right;
+        text-align: center;
+        font-size: 0.5em;
+        text-decoration: none;
+        color: white;
+        margin-top: 25px;
+        padding: 30px 0 5px 0;
+        text-transform: uppercase;
+        font-weight: 300;
+        background-color: $purple;
+        background-image: url("img/menu-icon-white.svg");
+        background-repeat: no-repeat;
+        background-position: center 5px;
+        background-size: 20px 20px;
+        border-bottom-right-radius: 2px;
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 2px;
+        border-top-left-radius: 2px;
+        border-bottom: none;
+        &:hover {
+          background-color: $darkpurple;
+        }
+        &.open {
+            background-image: url("img/menu-icon-white-closed.svg");
+        }
+        transition: margin-top 1s;
+    }
+    &.small {
+        .menu-toggle {
+          margin-top: 15px;
+        }
+        ul {
+            top: 0px;
+        }
+    }
+    ul {
+        z-index: 999;
+        width: 280px;
+        height: 100%;
+        position: fixed;
+        left: -280px;
+        top: 0;
+        background: $purple;
+        overflow-y: scroll;
+        clear: both;
+        color: #E5D8E9;
+        font-weight: 300;
+        list-style-type: decimal-leading-zero;
+        list-style-position: inside;
+        margin: 0;
+        padding: 45px 15px 15px 15px;
+    }
+    li{
+        display: list-item;
+        font-weight: 300;
+        font-size: 1.2em;
+        margin-bottom: 30px;
+        a, a:visited {
+            color: #E5D8E9;
+            text-decoration: none;
+            border: none;
+        }
+        a:hover {
+            color: white;
+            border-bottom: 1px dotted;
+        }
+        span {
+            display: block;
+            font-size: 0.75em;
+            color: #CAB1D3;
+        }
+    }
+}
+.lt-ie9 {
+    nav.main-menu {
+        .menu-toggle {
+            background-image: url("img/menu-icon-white.png");
+            &.open {
+                background-image: url("img/menu-icon-white-closed.png");
+            }
+        }
+    }
+}
+.home-feature {
+     font-size: 80%;
+}
+
+/* conference page styles */
+#keynote-highlight {
+  img {
+      top: -20px;
+  }
+}

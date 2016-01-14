@@ -1,0 +1,412 @@
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Hide on mobile both screenreaders and browsers: h5bp.com/u
+ */
+.hideonmobile {
+    display: none !important;
+    visibility: hidden;
+}
+
+
+/*** typography ***/
+h1 {
+    font-size: 1.25em; //20px;
+    margin: 0;
+    color: #fff;
+}
+h1+h2.subheading {
+    font-size: 0.75em; //12px
+    margin-top: 0em;
+    color: $yellow;
+}
+h2 {
+    font-size: 1.25em; //20px
+    font-weight: 500;
+}
+h2.large {
+    font-size: 2em;
+}
+h3 {
+  
+}
+h4 {
+  
+}
+h5 {
+  
+}
+h6 {
+  
+}
+p {
+    font-size: 1em; //16px
+}
+p.large {
+    font-size: 1.375em; //22px
+    &.extra-right-space {
+        margin-right: auto;
+    }
+}
+li {
+    font-size: 0.875em; //14px
+    margin-bottom: 0.8em;
+}
+figcaption {
+    font-size: 0.875em;
+}
+ul.unstyled, ol.unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.centered {
+  text-align: center;
+}
+/* flexible images */
+img {
+    max-width: 100%;
+}
+
+/*** layout and header footer styles ***/
+section {
+    padding: 0 .625em;
+}
+header {
+    padding-left: 42px;
+    .social {
+      right: 2px;
+      top: 20px;
+      a {
+          margin-left: 0px;
+        }
+    }
+    &.small {
+      .social {
+        top: 20px;
+      }
+    }
+}
+nav.main-menu {
+    .menu-toggle {
+        margin-top: 15px;
+        left: 0;
+        border-bottom-left-radius: 0px;
+        border-top-left-radius: 0px;
+        margin-left: 0px;
+    }
+    li:first-child {
+        margin-left: 35px;
+    }
+}
+.logo {
+    width: 200px;
+    height: 46px;
+    margin-left: 2px;
+}
+.full-title {
+    padding-top: 81px;
+    h1, p {
+        font-size: 0.6em;
+        font-weight: 300;
+    }
+}
+
+
+/*** container div classes for use within sections ***/
+.eighty-percent, 
+.ninety-percent,
+.one-third,
+.half,
+.two-thirds,
+.two-quarters,
+.one-eigth,
+.five-twelfths,
+.five-sixths,
+.ten-twelfths {
+  width: 100%;
+}
+.one-quarter {
+    width: 50%;
+}
+.prefix-one-twelfth,
+.prefix-two-twelfths,
+.prefix-one-quarter,
+.prefix-seven-twelfths {
+  margin-left: 0;
+}
+
+.on-this-page {
+  position: relative;
+  z-index: 0;
+  &+div {
+    margin-top: 0;
+  }
+}
+
+/*** hero modules ***/
+// launch video module
+.videos {
+  background-image: none;
+}
+.video-box {
+  width: 100%;
+}
+.video-box {
+  h2 {
+    margin: 10px 0 0 0;
+  }
+  p {
+    margin: 5px 0;
+  }
+  .play {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+// standard page hero module
+.page-hero {
+    background-image: none !important;
+  height: 200px;
+  padding-top: 0px;
+}
+.page-title {
+  height: 100%;
+  bottom: 0px;
+  background: #555555;
+  background: rgba(0,0,0,0.4);
+}
+.page-title section {
+    position: absolute;
+    bottom: 10px;
+}
+.page-hero.sci3910 {
+  .monash-logo {
+    float: none;
+    margin: 20px auto;
+  }
+}
+.page-hero.launch {
+    height: auto;
+}
+.page-hero.home {
+  .page-title {
+    blockquote {
+        margin: 20px 10px;
+        p {
+            font-weight: 100;
+            font-size: 1em;
+        }
+        footer {
+            font-size: 0.75em;
+        }
+    }
+  }
+}
+
+
+.inset {
+    position: relative;
+    width: 100%;
+}
+.green.inset {
+    margin: 0;
+}
+.infograph {
+    width: 100%;
+    min-height: 0;
+    padding: 0;
+    background-size: 92px 92px;
+    background-position: 5px 5px;
+}
+.infograph h2 {
+    display: block;
+    font-size: 7em;
+    line-height: 0.8;
+    margin: 0 0 10px 100px;
+    padding: 0;
+    float: none;
+}
+.infograph p {
+    font-size: 1em;
+    margin: 10px;
+    text-align: center;
+}
+.infograph.three {
+    margin-left: 0;
+}
+.olt p {
+        margin: 0 10px;
+}
+.logos {
+    margin: 50px 0;
+    text-align: center;
+}
+.logos img {
+    display: block;
+    margin: 10px auto;
+}
+ol.innovations {
+    margin: 0 auto;
+}
+ol.innovations li { 
+    font-size: 1em;
+}
+ol.innovations li span { 
+    margin: 0 20px 0 0;
+}
+
+.home-feature {
+  h2 {
+    font-size: 1em;
+  }
+}
+
+/*** SCI1390 page styles ***/
+figure.process {
+  width: 25%;
+  margin: 0px;
+}
+
+/*** EDF5674 page styles ***/
+.activity-list li {
+  margin-left: 0;
+}
+.icon-list {
+  li {
+    margin-left: -20px;
+  }
+}
+
+.slide-show {
+    padding: 0;
+}
+
+.article.one-quarter {
+    width: 100%;
+    margin-right: 0;
+}
+
+/* conference page styles */
+#overview {
+  p.lead {
+    font-size: 18/16*1em;
+  }
+}
+
+#keynote-highlight {
+  section {
+    min-height: 0;
+    padding-bottom: 1em;
+  }
+  img {
+      top: -20px;
+    width: 40%;
+    left: -8%;
+  }
+  div {
+    padding-left: 35%;
+  }
+  h3 {
+    font-size: 1em;
+  }
+  p {
+    span {
+      font-size: 1.2em;
+    }
+  }
+    blockquote {
+        p {
+          font-size: 1.2em;
+        }
+    }
+}
+
+#program {
+    section {
+        aside#mc {
+            width: 100%;
+            position: relative;
+            background: #eee;
+            img {
+                border: 5px solid #91f6c4;
+                width: 50%;
+            }
+            &:after {
+                display: none;
+            }
+            .about-the-mc {
+                display: none;
+            }
+        }
+    }
+}
+.conference-program {
+    clear: both;
+  td {
+    width: 90%;
+    float: right;
+    font-size: 18/16*1em;
+  }
+  td:first-child {
+    width: 10%;
+    float: left;
+    clear: both;
+    height: 50px;
+    background-image: none;
+    line-height: 1;
+  }
+}
+
+.conference-highlight {
+    height: auto;
+    background-image: none;
+    .half {
+        padding: 10px  0;
+        &:first-child {
+          padding: 0;
+        }
+    }
+    h2 {
+        line-height: 1;
+    }
+    p {
+        margin: 0;
+        line-height: 1;
+    }
+    .conference-text {
+        padding-right: 0px;
+        text-align: left;
+    }
+    .button {
+        float: right;
+        margin: 0;
+    }
+}
+
+#why-when {
+  margin-bottom: 3em;
+  ul {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+#venue {
+  .address {
+    padding: 0;
+  }
+  .url {
+    padding: 0;
+  }
+  img {
+    width: 100%;
+  }
+}
+
+#mc_embed_signup {
+  position: relative;
+  padding: 10px 16px 0 16px;
+}
