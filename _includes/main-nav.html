@@ -1,11 +1,11 @@
         <nav class="main-menu">
             <a class="menu-toggle" href="#">Menu</a>
             <ul>
-                {% if page.url == '/index.html' %}<li class="active">{% else %}<li>{% endif %}<a href="/index.html">Home</a></li>
-                {% if page.url == '/about-the-project/index.html' %}<li class="active">{% else %}<li>{% endif %}<a href="/about-the-project/">About the project</a></li>
-                <li><a href="/project-launch/">Project Launch</a></li>
-                <li><a href="/in-the-news/">In the news</a></li>
-                <li><a href="/activity-update/">Activity Update</a></li>
-                <li><a href="/conference/">Conference</a></li>
+                {% if page.url == '/' %}<li class="active">{% else %}<li>{% endif %}<a href="/index.html">Home</a></li>
+                {% if page.url == '/about-the-project/' %}<li class="active">{% else %}<li>{% endif %}<a href="/about-the-project/">About the project</a></li>
+                {% if page.url == '/project-launch/' %}<li class="active">{% else %}<li>{% endif %}<a href="/project-launch/">Project Launch</a></li>
+                {% if page.url == '/in-the-news/' %}<li class="active">{% else %}<li>{% endif %}<a href="/in-the-news/">In the news</a></li>
+                {% if page.url == '/activity-update/' %}<li class="active">{% else %}<li>{% endif %}<a href="/activity-update/">Activity Update</a></li>
+                {% if page.url == '/conference/' %}<li class="active">{% else %}<li>{% endif %}<a href="/conference/">Conference</a></li>
             </ul>
         </nav>

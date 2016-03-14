@@ -237,6 +237,7 @@ nav.main-menu {
         transition: top 1s;
     }
     li{
+        position: relative;
         white-space: nowrap;
         font-weight: 500;
         display: inline;
@@ -250,6 +251,19 @@ nav.main-menu {
           &:hover {
             border-bottom: 1px dotted $purple;
           }
+        }
+        &.active:after {
+            content: "";
+            width: 0; 
+            height: 0; 
+            border-left: 5px solid transparent;
+            border-right: 5px solid transparent;
+            border-bottom: 5px solid $purple;
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
         }
     }
     &.small {
@@ -316,9 +330,10 @@ nav.main-menu {
 .container {
   /* to eliminate white space between .col inline-blocks use blank font*/
   font-family: Conv_AdobeBlank;
-  /* for firefox */
+  /* for firefox 
   letter-spacing: -0.31em;
-  word-spacing: -0.43em;
+  word-spacing: -0.43em; */
+    font-size: 0;
   &.narrow {
      max-width: 960px;
      margin: 0 auto;
@@ -328,16 +343,17 @@ nav.main-menu {
   /* to eliminate white space between .col inline-blocks for ie8 and below */
   font-family: 'Roboto', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
   zoom: 1;
-  letter-spacing: -0.31em;
-  word-spacing: -0.43em;
+  /*letter-spacing: -0.31em;
+  word-spacing: -0.43em;*/
   font-size: 1em;
 }
-.container * {
+.container > * {
     /* reset font family to a font you can see */
     font-family: 'Roboto', 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
-    /* for firefox and ie8 */
+    /* for firefox and ie8 
     letter-spacing: normal;
-    word-spacing: normal;
+    word-spacing: normal;*/
+    font-size: 1rem;
 }
 /*
 .lt-ie9 .container {
@@ -398,6 +414,9 @@ nav.main-menu {
    width: 5/6*100%;
 }
 
+.prefix-one-third {
+    margin-left: 1/3*100%;
+}
 .prefix-one-quarter {
     margin-left: 1/4*100%;
 }
@@ -1688,7 +1707,7 @@ article {
   color: $purple;
 }
 #mc_embed_signup form { padding: 10px 0 0 0; }
-#mc_embed_signup .mc-field-group label {display:inline-block; width: 25%; color: #444; font-weight: 400;}
-#mc_embed_signup .mc-field-group input {display:inline-block; width: 73%;}
+#mc_embed_signup .mc-field-group label {display:inline-block; width: 27%; color: #444; font-weight: 400;}
+#mc_embed_signup .mc-field-group input {display:inline-block; width: 70%;}
 #mc_embed_signup .mc-field-group select {width: 25%;}
 #mc_embed_signup .button {background-color: $purple;}

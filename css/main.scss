@@ -1,7 +1,9 @@
 ---
 # Jekyll Front matter
 ---
-/* Adobe Blank font used to elimnate white space between inline-blocks in grid */
+@import url(http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,500,500italic);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
+@import url('//cdn.jsdelivr.net/font-zero-width/latest/zero-width.css');
 @font-face {
   font-family: 'Conv_AdobeBlank';
   src: url(fonts/AdobeBlank.eot?#iefix) format("embedded-opentype"),
@@ -11,21 +13,6 @@
   font-weight: normal;
   font-style: normal; }
 
-@import url(http://fonts.googleapis.com/css?family=Lemon);
-@import url(http://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,500,500italic);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Slab);
-/*
-@font-face {
-    font-family: 'loveloline_light';
-    src: url('fonts/lovelo_line_light-webfont.eot');
-    src: url('fonts/lovelo_line_light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/lovelo_line_light-webfont.woff') format('woff'),
-         url('fonts/lovelo_line_light-webfont.ttf') format('truetype'),
-         url('fonts/lovelo_line_light-webfont.svg#loveloline_light') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-*/
 // colors
 $purple: #905ba1;
 $darkpurple: #744983;
