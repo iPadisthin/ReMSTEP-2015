@@ -37,8 +37,8 @@ h1+h2.subheading {
       font-size: 24/16*1em;
     }
 }
-h2 {
-    font-size: 2.5em; //40px
+h2, .container h2 {
+    font-size: 2.5rem; //40px
     font-weight: 300;
     margin-bottom: 0;
     color: $purple;
@@ -461,6 +461,7 @@ nav.main-menu {
     position: relative;
     max-width: 540px;
     padding: 20px 0 20px 120px;
+    margin: 0 auto;
 }
 .cc img {
     position: absolute;
@@ -1039,6 +1040,11 @@ ol.innovations li span {
   p {
     margin: 0;
   }
+    .download.button {
+        position: absolute;
+        bottom: 20px;
+        right: 40px;
+    }
   .more-link {
     position: absolute;
     bottom: 20px;

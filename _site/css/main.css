@@ -118,8 +118,8 @@ h1 + h2.subheading {
   h1 + h2.subheading span {
     font-size: 1.5em; }
 
-h2 {
-  font-size: 2.5em;
+h2, .container h2 {
+  font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 0;
   color: #905ba1; }
@@ -488,7 +488,8 @@ font-family: Conv_AdobeBlank;*/
 .cc {
   position: relative;
   max-width: 540px;
-  padding: 20px 0 20px 120px; }
+  padding: 20px 0 20px 120px;
+  margin: 0 auto; }
 
 .cc img {
   position: absolute;
@@ -973,6 +974,10 @@ ol.innovations li span {
     font-size: 1.8em; }
   .home-feature p {
     margin: 0; }
+  .home-feature .download.button {
+    position: absolute;
+    bottom: 20px;
+    right: 40px; }
   .home-feature .more-link {
     position: absolute;
     bottom: 20px;
